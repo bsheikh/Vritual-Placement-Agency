@@ -1,8 +1,6 @@
 /*
  * Programmer: Bilawal Sheikh
  * File: PositionInformation.java
- * Date: June 12, 2013
- * Course: ICS4U
  */
 
 import java.io.*;

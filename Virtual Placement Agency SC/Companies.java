@@ -1,8 +1,6 @@
 /*
  * Programmer: Bilawal Sheikh
  * File: Companies.java
- * Date: June 12, 2013
- * Course: ICS4U
  */
 
 /** Comapnies
@@ -25,7 +23,7 @@ public class Companies {
   JPanel contentPane;
   JLabel companyName, address, city, province, postalCode, contactName, phone, email, notes;
   JTextField companyNameInput, addressInput, cityInput, postalCodeInput, contactNameInput, phoneInput, emailInput, notesInput;
-  JComboBox<String> provinceInput;
+  JComboBox provinceInput;
   JButton saveButton, backButton;
   public String provinceName;
   public int frameStatus;
@@ -88,7 +86,7 @@ public class Companies {
     province = new JLabel("Province(Please Click and Select):");
     contentPane.add(province);
     String[] provinceList = {" ","Ontario", "Quebec", "British Columbia", "Alberta", "Nova Scotia", "Manitoba", "Saskatchewan", "New Brunswick", "PEI", "Newfoundland and Labrador"};
-    provinceInput = new JComboBox<String>(provinceList);
+    provinceInput = new JComboBox(provinceList);
     provinceInput.setSelectedIndex(0);
     provinceInput.addActionListener(new ProvinceListener());
     contentPane.add(provinceInput);

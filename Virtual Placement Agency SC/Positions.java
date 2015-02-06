@@ -1,8 +1,6 @@
 /*
  * Programmer: Bilawal Sheikh
  * File: Positions.java
- * Date: June 12, 2013
- * Course: ICS4U
  */
 
 
@@ -29,7 +27,7 @@ public class Positions {
   JPanel contentPane;
   JLabel positionTitle, notes, companyName, contactName, contactPhone, positionOpenedDate, positionClosedDate, reasonClosed, positionStatus;
   JTextField positionTitleInput, notesInput, contactNameInput, contactPhoneInput, positionOpenedDateInput, positionClosedDateInput, reasonClosedInput;
-  JComboBox<String> positionStatusInput, companyNameInput;
+  JComboBox positionStatusInput, companyNameInput;
   JButton saveButton, backButton;
  
   
@@ -125,7 +123,7 @@ public class Positions {
     String compDisplayArray[] = new String[compDisplayArrayList.size()];
     compDisplayArray = compDisplayArrayList.toArray(compDisplayArray);
     
-    companyNameInput = new JComboBox<String>(compDisplayArray);
+    companyNameInput = new JComboBox(compDisplayArray);
     companyNameInput.setSelectedIndex(0);
     companyNameInput.setAlignmentX(JComboBox.LEFT_ALIGNMENT);
     companyNameInput.addActionListener(new SelectCompanyInput());
@@ -145,7 +143,7 @@ public class Positions {
     positionStatus = new JLabel("Position Status:");
     contentPane.add(positionStatus);
     String[] positionStatusList = {" ","Active", "Closed"};
-    positionStatusInput = new JComboBox<String>(positionStatusList);
+    positionStatusInput = new JComboBox(positionStatusList);
     positionStatusInput.setSelectedIndex(0);
     positionStatusInput.addActionListener(new PositionStatusListener());
     contentPane.add(positionStatusInput);

@@ -1,8 +1,6 @@
 /*
  * Programmer: Bilawal Sheikh
  * File: VirtualPlacementAgency.java
- * Date: June 12, 2013
- * Course: ICS4U
  */
 
 import javax.swing.*; 

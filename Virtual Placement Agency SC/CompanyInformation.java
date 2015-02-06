@@ -1,8 +1,6 @@
 /*
  * Programmer: Bilawal Sheikh
  * File: CompanyInformation.java
- * Date: June 12, 2013
- * Course: ICS4U
  */
 
 

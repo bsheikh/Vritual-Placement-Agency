@@ -1,6 +1,8 @@
 /*
  * Programmer: Bilawal Sheikh
  * File: AddEditDelete.java
+ * Date: June 12, 2013
+ * Course: ICS4U
  */
 
 import javax.swing.*; 
@@ -22,7 +24,7 @@ public class AddEditDelete {
 
   //COMPANY VARIABLES
   JLabel compName, compStreet, compCity, compProvince, compContactName, compPostalCode, compPhoneNumber, compEmail, compNotes;
-  JComboBox companyList;
+  JComboBox<String> companyList;
   CompanyInformation c = new CompanyInformation("", "", "", "", "", "", "", "", "");
   ArrayList<CompanyInformation> compArrayList = new ArrayList<CompanyInformation>();
   ArrayList<String> compDisplayArrayList = new ArrayList<String>();
@@ -103,7 +105,7 @@ public class AddEditDelete {
       String compDisplayArray[] = new String[compDisplayArrayList.size()];
       compDisplayArray = compDisplayArrayList.toArray(compDisplayArray);
       
-      companyList = new JComboBox(compDisplayArray);
+      companyList = new JComboBox<String>(compDisplayArray);
       companyList.setSelectedIndex(0);
       companyList.setAlignmentX(JComboBox.LEFT_ALIGNMENT);
       companyList.addActionListener(new SelectCompany());
@@ -199,7 +201,7 @@ public class AddEditDelete {
       String appDisplayArray[] = new String[appDisplayArrayList.size()];
       appDisplayArray = appDisplayArrayList.toArray(appDisplayArray);
       
-      companyList = new JComboBox(appDisplayArray);
+      companyList = new JComboBox<String>(appDisplayArray);
       companyList.setSelectedIndex(0);
       companyList.setAlignmentX(JComboBox.LEFT_ALIGNMENT);
       companyList.addActionListener(new SelectCompany());
@@ -293,7 +295,7 @@ public class AddEditDelete {
       
       String posDisplayArray[] = new String[posDisplayArrayList.size()];
       posDisplayArray = posDisplayArrayList.toArray(posDisplayArray);
-      companyList = new JComboBox(posDisplayArray);
+      companyList = new JComboBox<String>(posDisplayArray);
       companyList.setSelectedIndex(0);
       companyList.setAlignmentX(JComboBox.LEFT_ALIGNMENT);
       companyList.addActionListener(new SelectCompany());
